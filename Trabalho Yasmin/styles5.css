@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h3, h4, h2 {
+    color: #8B008B;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #8B008B;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+    background-color: #8B008B;
+    border: 1px solid #8B008B;
+    border-radius: 5px;
+    margin: 0 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tab:hover {
+    background-color: #9b1d9b;
+    transition: background-color 0.3s ease;
+}
+
+.tab-content {
+    display: none;
+    padding: 30px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.content-block {
+    margin-bottom: 20px;
+}
+
+.content-block ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content-block ul li {
+    background-color: #f4f4f4;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.cycle ol {
+    padding-left: 20px;
+}
+
+.story {
+    margin-bottom: 20px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.botao-interacao {
+    background-color: #8B008B;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.botao-interacao:hover {
+    background-color: #9b1d9b;
+    transition: background-color 0.3s ease;
+}

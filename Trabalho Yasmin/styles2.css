@@ -1,0 +1,39 @@
+/* Estilo para os botões de interação */
+.botao-interacao {
+    background-color: #28a745; /* Cor de fundo verde (usada para o botão, dando um aspecto positivo/verde) */
+    color: white; /* Cor do texto dentro do botão, configurada para branco para contrastar com o fundo verde */
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    padding: 12px 24px; /* Define o preenchimento interno do botão, 12px acima/abaixo e 24px à esquerda/direita, garantindo um bom espaço ao redor do texto */
+    border: none; /* Remove qualquer borda padrão do botão */
+    border-radius: 5px; /* Aplica um raio de borda de 5px para deixar os cantos do botão arredondados */
+    cursor: pointer; /* Altera o cursor para o formato de mão (indica que o botão é clicável) */
+    transition: background-color 0.3s, transform 0.3s; /* Aplica uma transição suave de 0.3 segundos para mudanças na cor de fundo e transformação (efeitos como hover ou active) */
+    text-align: center; /* Alinha o texto dentro do botão ao centro */
+    text-decoration: none; /* Remove qualquer decoração de texto, como sublinhado, caso o botão seja um link */
+    display: inline-block; /* Faz o botão ser exibido como um bloco em linha, permitindo a definição de dimensões e alinhamento, sem quebrar a linha */
+    margin: 10px; /* Adiciona uma margem de 10px ao redor do botão, separando-o de outros elementos ao redor */
+}
+
+/* Estilo para quando o botão recebe o hover (passar o mouse sobre o botão) */
+.botao-interacao:hover {
+    background-color: #218838; /* Cor de fundo verde mais escuro ao passar o mouse, proporcionando um efeito visual de interação */
+    transform: scale(1.05); /* Efeito de ampliação que faz o botão crescer ligeiramente (5%) quando o mouse passa por cima */
+}
+
+/* Estilo para quando o botão é pressionado (ativo) */
+.botao-interacao:active {
+    background-color: #1e7e34; /* Cor de fundo mais escura quando o botão é pressionado, simulando um "clique" visual */
+}
+
+/* Estilo para quando o botão recebe foco (usado para acessibilidade) */
+.botao-interacao:focus {
+    outline: 2px solid #fff; /* Adiciona uma borda de 2px branca ao redor do botão quando ele recebe foco (usado quando o botão é selecionado com o teclado, por exemplo) */
+    outline-offset: 4px; /* Adiciona um pequeno afastamento de 4px entre a borda e o botão para melhorar a visibilidade do foco */
+}
+
+/* Estilo para o rodapé com botões */
+.footer-buttons {
+    text-align: center; /* Alinha os botões dentro do rodapé ao centro */
+    margin-top: 30px; /* Adiciona um espaço de 30px acima do rodapé para separar os botões do conteúdo superior */
+}

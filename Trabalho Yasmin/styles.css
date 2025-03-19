@@ -1,0 +1,70 @@
+/* Estilos globais aplicados ao corpo da página (body) */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do texto como Arial ou, caso não disponível, uma fonte sans-serif genérica */
+    margin: 0; /* Corrige o valor de margin de 3px para 0 (margem padrão) */
+    padding: 0; /* Corrige o valor de padding de 200px para 0 (não é necessário tanto preenchimento no body) */
+    background-color: #f4f4f9; /* Mantém a cor de fundo clara */
+    color: #333; /* Mantém a cor do texto em um tom escuro (para boa legibilidade) */
+}
+
+/* Estilo para o cabeçalho (header) */
+header {
+    background-color: #8B008B; /* Cor de fundo roxa para o cabeçalho */
+    color: #ffffff; /* Cor do texto em branco */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    padding: 1.8rem; /* Preenchimento ao redor do conteúdo no cabeçalho */
+}
+
+/* Estilo específico para o título no cabeçalho (h1) */
+header h1 {
+    margin: 0; /* Remove a margem padrão do h1 */
+}
+
+/* Estilo geral para seções (section) */
+section {
+    padding: 2rem; /* Adiciona preenchimento em volta das seções */
+}
+
+/* Estilo para títulos das seções (class .section-title) */
+.section-title {
+    color: #8B008B; /* Cor do título da seção em roxo escuro */
+    font-size: 1.8rem; /* Tamanho da fonte do título */
+    margin-bottom: 1rem; /* Margem inferior para separar o título do conteúdo */
+}
+
+/* Estilo para blocos de conteúdo (class .content-block) */
+.content-block {
+    background-color: #fff; /* Cor de fundo branca para os blocos de conteúdo */
+    padding: 1.5rem; /* Preenchimento ao redor do conteúdo dentro de cada bloco */
+    margin-bottom: 1.5rem; /* Margem inferior para separar os blocos de conteúdo */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para criar um efeito de profundidade */
+}
+
+/* Estilo para títulos dentro de .content-block (h3) */
+.content-block h3 {
+    color: #8B008B; /* Cor roxa para os títulos dentro dos blocos de conteúdo */
+}
+
+/* Estilo para o rodapé da página (footer) */
+footer {
+    text-align: center; /* Centraliza o texto no rodapé */
+    background-color: #8B008B; /* Cor de fundo roxa para o rodapé */
+    color: white; /* Cor do texto em branco */
+    padding: 1rem; /* Preenchimento dentro do rodapé */
+}
+
+/* Estilos para as seções com as classes específicas (ex: .law, .cycle) */
+.law, .cycle, .biography, .stories, .myths, .references {
+    margin-top: 2rem; /* Aplica uma margem superior para separar essas seções de outras */
+}
+
+/* Estilos para listas não ordenadas (ul) dentro do conteúdo */
+ul {
+    padding-left: 20px; /* Adiciona um recuo à esquerda nos itens da lista */
+}
+
+/* Estilo para itens de lista (li) */
+li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}

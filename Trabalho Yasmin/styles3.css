@@ -1,0 +1,78 @@
+/* Animação de FadeIn para as seções */
+.content-block {
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Começa deslocado 20px para baixo */
+    animation: fadeInUp 0.6s forwards; /* Animação de fadeInUp que dura 0.6s e vai para o estado final */
+    margin: 20px 0; /* Espaço entre as seções */
+}
+
+/* Definição da animação de FadeInUp */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(20px); /* Começa 20px abaixo da posição original */
+    }
+    100% {
+        opacity: 1; /* Fica visível */
+        transform: translateY(0); /* Retorna à posição original */
+    }
+}
+
+/* Animação de FadeIn para os títulos h2, h3, h4 */
+h2, h3, h4 {
+    opacity: 0; /* Começa invisível */
+    transform: translateX(-20px); /* Começa deslocado 20px para a esquerda */
+    animation: fadeInLeft 0.6s forwards; /* Animação de fadeInLeft que dura 0.6s e vai para o estado final */
+}
+
+/* Definição da animação de FadeInLeft */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0; /* Começa invisível */
+        transform: translateX(-20px); /* Começa 20px à esquerda da posição original */
+    }
+    100% {
+        opacity: 1; /* Fica visível */
+        transform: translateX(0); /* Retorna à posição original */
+    }
+}
+
+/* Estilo para os botões de interação */
+.botao-interacao {
+    background-color: #28a745; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+    padding: 12px 24px; /* Padding (espaçamento interno) para criar botões maiores */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Indica que o botão é clicável */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para a mudança de cor de fundo e transformação (efeito de clique) */
+    text-align: center; /* Alinha o texto centralizado */
+    text-decoration: none; /* Remove a decoração de link (underline) */
+    display: inline-block; /* Permite que o botão seja exibido inline, mas com as características de um bloco */
+    margin: 10px; /* Adiciona margem ao redor do botão */
+}
+
+/* Efeito de hover nos botões (quando o mouse passa sobre o botão) */
+.botao-interacao:hover {
+    background-color: #218838; /* Cor de fundo mais escura ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ligeiramente (efeito de ampliação) */
+}
+
+/* Efeito ativo nos botões (quando o botão é pressionado) */
+.botao-interacao:active {
+    background-color: #1e7e34; /* Cor de fundo mais escura quando pressionado */
+}
+
+/* Estilo para quando o botão recebe foco (importante para acessibilidade) */
+.botao-interacao:focus {
+    outline: 2px solid #fff; /* Adiciona uma borda branca para indicar que o botão está focado */
+    outline-offset: 4px; /* Dá um pequeno afastamento da borda para dar um efeito visual melhor */
+}
+
+/* Estilo para o rodapé com os botões */
+.footer-buttons {
+    text-align: center; /* Alinha o conteúdo do rodapé ao centro */
+    margin-top: 30px; /* Adiciona espaço acima dos botões no rodapé */
+}

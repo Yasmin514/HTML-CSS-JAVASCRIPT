@@ -1,0 +1,80 @@
+/* Estilo para links */
+a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #007bff; /* Cor inicial do texto do link (azul claro) */
+    transition: color 0.3s ease, transform 0.3s ease 0.1s; /* Transição suave para cor e movimento lateral, com um pequeno atraso */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+a:hover {
+    color: #0056b3; /* Cor do link fica mais escura ao passar o mouse */
+    transform: translateX(5px); /* Movimento lateral do link para a direita ao passar o mouse */
+}
+
+/* Efeito ao pressionar o link */
+a:active {
+    color: #004085; /* Cor mais escura quando o link é pressionado */
+}
+
+/* Estilo para quando o link recebe o foco (acessibilidade) */
+a:focus {
+    outline: 2px solid #ff9800; /* Borda de 2px laranja para indicar foco no link (melhora a acessibilidade) */
+    outline-offset: 4px; /* Distância do contorno de foco, para melhorar a visibilidade */
+}
+
+/* Estilo para os itens de lista */
+ul li, ol li {
+    transition: color 0.3s ease, transform 0.3s ease 0.1s; /* Transição suave para cor e movimento lateral */
+}
+
+/* Efeito ao passar o mouse sobre os itens da lista */
+ul li:hover, ol li:hover {
+    color: #28a745; /* Cor de destaque verde ao passar o mouse sobre o item da lista */
+    transform: translateX(5px); /* Movimento lateral do item da lista para a direita ao passar o mouse */
+}
+
+/* Estilo ao pressionar os itens da lista */
+ul li:active, ol li:active {
+    color: #218838; /* Cor mais escura do item da lista quando pressionado */
+}
+
+/* Estilo para quando o item da lista recebe o foco (acessibilidade) */
+ul li:focus, ol li:focus {
+    outline: 2px solid #ff9800; /* Borda laranja ao focar no item da lista, útil para navegação via teclado */
+    outline-offset: 4px; /* Distância do contorno de foco */
+}
+
+/* Estilos específicos para dispositivos sem suporte a hover (exemplo: dispositivos móveis) */
+@media (hover: none) {
+    /* Quando o dispositivo não tem suporte a hover, como smartphones e tablets, o hover é ignorado */
+    a, ul li, ol li {
+        transform: translateX(0); /* Não move os elementos lateralmente em dispositivos móveis */
+        color: #007bff; /* Mantém a cor original do link e itens de lista */
+    }
+
+    /* Adiciona um efeito de fundo ao clicar nos links e itens de lista */
+    a:active, ul li:active, ol li:active {
+        background-color: rgba(0, 123, 255, 0.2); /* Leve mudança no fundo quando clicado */
+    }
+}
+
+/* Adiciona um efeito suave de transição para todos os elementos interativos */
+a, ul li, ol li {
+    transition: color 0.3s ease, transform 0.3s ease; /* Transição para cor e movimento lateral */
+}
+
+/* Melhorando o movimento para garantir que os efeitos sejam suaves quando o mouse sai do item */
+a, ul li, ol li {
+    transform: translateX(0); /* Elementos começam no estado original (não movidos) */
+}
+
+/* Melhorando a transição para um efeito suave de retorno */
+a:hover, ul li:hover, ol li:hover {
+    color: #28a745; /* Cor de destaque para o link ou item de lista */
+    transform: translateX(5px); /* Move o item para a direita */
+}
+
+/* Garantindo que a cor de fundo seja redefinida para o estado normal ao sair do hover */
+a, ul li, ol li {
+    background-color: transparent; /* Retorna o fundo ao normal */
+}
